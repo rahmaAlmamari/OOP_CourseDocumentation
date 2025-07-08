@@ -8,6 +8,15 @@
             //Create an instance of the UserTest class
             UserTest user = new UserTest();
 
+            //to show user menu options
+            Console.WriteLine("Welcome to User Management System");
+            Console.WriteLine("Please choose an option:");
+            Console.WriteLine("1. Create User");
+            Console.WriteLine("2. View User Details");
+            Console.WriteLine("3. Check Balance");
+            Console.WriteLine("4. Deposit");
+            Console.WriteLine("5. Exit");
+
             ////enter a value to user object fields which is a copye of UserTest class
             //user.UserName = "Rahma Almamari";
             //user.Email = "rahma.almamari@gmail.com";
