@@ -15,6 +15,9 @@ namespace OOP_CourseDocumentation
         public string Email;
         private double Balance;
 
+        //Static class members
+        public static int UserCount = 0;
+
 
 
 
