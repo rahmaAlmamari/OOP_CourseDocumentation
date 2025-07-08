@@ -9,7 +9,11 @@ namespace OOP_CourseDocumentation
     //This is a test a class ...
     class UserTest
     {
-       
+        //Normal class members
+        public string UserName;
+        public string Password;
+        public string Email;
+        private double Balance;
 
 
 
