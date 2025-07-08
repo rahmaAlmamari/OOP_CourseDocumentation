@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            //Create an instance of the UserTest class
+            UserTest user = new UserTest();
         }
     }
 }
