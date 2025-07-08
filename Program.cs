@@ -17,6 +17,34 @@
             Console.WriteLine("4. Deposit");
             Console.WriteLine("5. Exit");
 
+            char userChoice = '0'; // Initialize userChoice to avoid uninitialized variable warning
+            switch (userChoice)
+            {
+                case '1':
+                    Console.WriteLine("Creating User...");
+                    // Code to create user
+                    break;
+                case '2':
+                    Console.WriteLine("Viewing User Details...");
+                    // Code to view user details
+                    break;
+                case '3':
+                    Console.WriteLine("Checking Balance...");
+                    // Code to check balance
+                    break;
+                case '4':
+                    Console.WriteLine("Depositing...");
+                    // Code to deposit
+                    break;
+                case '5':
+                    Console.WriteLine("Exiting...");
+                    // Code to exit
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    break;
+            }
+
             ////enter a value to user object fields which is a copye of UserTest class
             //user.UserName = "Rahma Almamari";
             //user.Email = "rahma.almamari@gmail.com";
