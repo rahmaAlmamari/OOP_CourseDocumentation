@@ -13,6 +13,14 @@
             //user.Email = "rahma.almamari@gmail.com";
             //user.Password = "12345678";
 
+            //to get the values of the user object from the user input
+            Console.Write("Enter User Name: ");
+            user.UserName = Console.ReadLine();
+            Console.Write("Enter Email: ");
+            user.Email = Console.ReadLine();
+            Console.Write("Enter Password: ");
+            user.Password = Console.ReadLine();
+
             Console.WriteLine("-----------------------------------------------");
 
             //to display the values of the user object
