@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
 
-            //Create an instance of the UserTest class
-            UserTest user = new UserTest();
+            ////Create an instance of the UserTest class
+            //UserTest user = new UserTest();
 
             //to show user menu options
             Console.WriteLine("Welcome to User Management System");
@@ -51,12 +51,12 @@
             //user.Password = "12345678";
 
             //to get the values of the user object from the user input
-            Console.Write("Enter User Name: ");
-            user.UserName = Console.ReadLine();
-            Console.Write("Enter Email: ");
-            user.Email = Console.ReadLine();
-            Console.Write("Enter Password: ");
-            user.Password = Console.ReadLine();
+            //Console.Write("Enter User Name: ");
+            //user.UserName = Console.ReadLine();
+            //Console.Write("Enter Email: ");
+            //user.Email = Console.ReadLine();
+            //Console.Write("Enter Password: ");
+            //user.Password = Console.ReadLine();
 
             Console.WriteLine("-----------------------------------------------");
 
