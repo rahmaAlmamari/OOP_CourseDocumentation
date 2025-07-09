@@ -2,15 +2,15 @@
 {
     internal class Program
     {
+        static string menu = "y"; // Initialize menu to true to enter the loop
         static void Main(string[] args)
         {
-            string menu = "y"; // Initialize menu to true to enter the loop
+            
             do
             {
                 //to call Menu method ...
                 Menu();
-                Console.WriteLine("Do you want to do something more? (y/n)");
-                menu = Console.ReadLine();
+                
 
             } while (menu == "y" || menu == "Y");
    
@@ -83,12 +83,18 @@
                     break;
                 case '5':
                     Console.WriteLine("Have a nice day (^0^)");
-
+                    menu = "n";
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
             }
+            if(menu == "y")
+            {
+                Console.WriteLine("Do you want to do something more? (y/n)");
+                menu = Console.ReadLine();
+            }
+            
         }
     }
 }
