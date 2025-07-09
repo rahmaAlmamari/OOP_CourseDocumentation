@@ -70,8 +70,9 @@
                     user.CreateUser(userName, email, password);
                     break;
                 case '2':
-                    //Console.WriteLine("Viewing User Details...");
-                    // Code to view user details
+                    Console.WriteLine("Enter your password:");
+                    string password1 = Console.ReadLine();
+                    user.ViewUserDetails(password1);
                     break;
                 case '3':
                     //Console.WriteLine("Checking Balance...");
