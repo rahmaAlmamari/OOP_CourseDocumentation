@@ -41,6 +41,10 @@ namespace OOP_CourseDocumentation
                 Console.WriteLine("Password: " + Email);
                 Console.WriteLine("Balance:" + Balance);
             }
+            else
+            {
+                Console.WriteLine("Invalid user");
+            }
             
         }
 
