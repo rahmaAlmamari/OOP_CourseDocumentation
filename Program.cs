@@ -3,6 +3,8 @@
     internal class Program
     {
         static string menu = "y"; // Initialize menu to true to enter the loop
+        //Create an instance of the UserTest class
+        static UserTest user = new UserTest();
         static void Main(string[] args)
         {
             
@@ -41,8 +43,7 @@
         public static void Menu()
         {
             Console.Clear();
-            //Create an instance of the UserTest class
-            UserTest user = new UserTest();
+          
 
             //to show user menu options
             Console.WriteLine("Welcome to User Management System");
