@@ -4,7 +4,43 @@
     {
         static void Main(string[] args)
         {
+            string menu = "y"; // Initialize menu to true to enter the loop
+            do
+            {
+                //to call Menu method ...
+                Menu();
+                Console.WriteLine("Do you want to do something more? (y/n)");
+                menu = Console.ReadLine();
 
+            } while (menu == "y" || menu == "Y");
+   
+
+            ////enter a value to user object fields which is a copye of UserTest class
+            //user.UserName = "Rahma Almamari";
+            //user.Email = "rahma.almamari@gmail.com";
+            //user.Password = "12345678";
+
+            //to get the values of the user object from the user input
+            //Console.Write("Enter User Name: ");
+            //user.UserName = Console.ReadLine();
+            //Console.Write("Enter Email: ");
+            //user.Email = Console.ReadLine();
+            //Console.Write("Enter Password: ");
+            //user.Password = Console.ReadLine();
+
+            //Console.WriteLine("-----------------------------------------------");
+
+            ////to display the values of the user object
+            //Console.WriteLine("User Details:");
+            //Console.WriteLine("User Name: " + user.UserName);
+            //Console.WriteLine("Email: " + user.Email);
+            //Console.WriteLine("Password: " + user.Password);
+        }
+
+        //Menu Method ...
+        public static void Menu()
+        {
+            Console.Clear();
             //Create an instance of the UserTest class
             UserTest user = new UserTest();
 
@@ -46,34 +82,13 @@
                     // Code to deposit
                     break;
                 case '5':
-                    //Console.WriteLine("Exiting...");
-                    // Code to exit
+                    Console.WriteLine("Have a nice day (^0^)");
+
                     break;
                 default:
-                    //Console.WriteLine("Invalid choice. Please try again.");
+                    Console.WriteLine("Invalid choice. Please try again.");
                     break;
             }
-
-            ////enter a value to user object fields which is a copye of UserTest class
-            //user.UserName = "Rahma Almamari";
-            //user.Email = "rahma.almamari@gmail.com";
-            //user.Password = "12345678";
-
-            //to get the values of the user object from the user input
-            //Console.Write("Enter User Name: ");
-            //user.UserName = Console.ReadLine();
-            //Console.Write("Enter Email: ");
-            //user.Email = Console.ReadLine();
-            //Console.Write("Enter Password: ");
-            //user.Password = Console.ReadLine();
-
-            Console.WriteLine("-----------------------------------------------");
-
-            ////to display the values of the user object
-            //Console.WriteLine("User Details:");
-            //Console.WriteLine("User Name: " + user.UserName);
-            //Console.WriteLine("Email: " + user.Email);
-            //Console.WriteLine("Password: " + user.Password);
         }
     }
 }
