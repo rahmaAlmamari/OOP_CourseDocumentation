@@ -27,6 +27,11 @@ namespace OOP_CourseDocumentation
             Password = password;
             UserCount++;
             Console.WriteLine("User created successfully!");
+            //to display the values of the user object
+            Console.WriteLine("User Details:");
+            Console.WriteLine("User Name: " + userName);
+            Console.WriteLine("Email: " + email);
+            Console.WriteLine("Password: " + password);
         }
 
 
