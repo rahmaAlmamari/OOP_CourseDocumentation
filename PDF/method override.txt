@@ -1,0 +1,39 @@
+class BankAccount
+{
+
+		protected double balance;
+
+		public BankAccount(double initialBalance)
+		{
+		balance = initialBalance;
+		}
+
+		public virtual void Withdraw(double amount)
+		{
+		balance -= amount;
+		Console.WriteLine($"{amount:C} withdrawn. New balance: {balance:C}");
+		}
+
+}
+
+
+class savingAccount : BankAccount
+{
+
+		public SavingAccount(int init) : base(init)
+		{ }
+
+		public override void Withdraw(double amount)
+		{
+                  if(balance < amount ) Console.writeline("error");
+		  else {
+                        base.withdraw(amount);
+			} 
+		}
+
+}
+
+
+savingAccount x = new savingAccount(100);  \\ x.balance = 100
+x.balance=20;                               \\ x.balance = 20
+x.withdraw(30);    \\error                          \\ x.balance = 20;
