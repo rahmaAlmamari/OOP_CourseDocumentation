@@ -1,0 +1,143 @@
+public interface IPlayable
+{
+   void startGame();
+   void EndGame();
+   void CalcuateScore();
+
+}
+
+public class FootBall : IPlayable
+{
+  public void CalcuateScore(){ Console.writeline("Team A wins"); }
+}
+
+public class Tennis : IPlayable
+{
+ public void CalcuateScore(){ Console.writeline("Player 1 defeat player2");}
+}
+
+--------------------------------------------------------------------------------------------
+Football A = new Football ();   A.startGame();  A.CalcuateScore(); A.EndGame();
+Tennis   B = new Tennis ();     B.startGame();  B.CalcuateScore(); B.EndGame();
+--------------------------------------------------------------------------------
+
+
+
+
+
+public interface IValidate
+{
+   bool HasOffences(string name, int ID); 
+
+}
+
+public class Traffic : IValidate
+{
+
+}
+
+---------------------------------------------------------------------------------------------
+
+IValidate x = new Traffic();
+bool result = x.HasOffences("Karim", 12433 );
+
+if(result == true )
+{
+   Console.writeline("sorry you should finish all your offences first ");
+}
+
+else 
+{
+  -----
+-------
+-------
+
+}
+
+
+-----------------------------------------------------------------
+
+
+
+interface IPaymentMethod
+{
+void Pay(decimal amount);
+}
+
+
+void ProcessPayment(creditcard method, decimal amount)
+{
+method.Pay(amount); // Interface hides the implementation
+}
+
+void ProcessPayment(IPaymentMethod method, decimal amount)
+{
+method.Pay(amount); // Interface hides the implementation
+}
+void ProcessPayment(IPaymentMethod method, decimal amount)
+{
+method.Pay(amount); // Interface hides the implementation
+}
+void ProcessPayment(IPaymentMethod method, decimal amount)
+{
+method.Pay(amount); // Interface hides the implementation
+}
+
+
+
+class creditcard : IPaymentMethod {}
+
+class paypal : IPaymentMethod {}
+
+class DebitCard: IPaymentMethod {}
+
+class PrePaidCard: IPaymentMethod {}
+
+
+ProcessPayment(new creditcard,100)
+ProcessPayment(new debitcard,100)
+
+ProcessPayment(,100)
+ProcessPayment(,100)
+\
+
+
+
+
+CalculateAre(Shape x)
+{
+   console.writeline( x.area(); );
+}
+
+
+
+
+CalculateAre(new circle(12));
+
+
+
+CalculateAre(new square(12));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
